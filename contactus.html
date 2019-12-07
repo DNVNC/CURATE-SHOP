@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>Contact Us</title>
+  <link href='styles/aboutus.css' type='text/css' rel='stylesheet'>
+
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div class='menu'>
+      <div class='homepage link'><a href=home.html>CURATE</a></div>
+      <div class='login link'><a href=signup.html>Login/Register</a></div>
+      <div class='story link'><a href=aboutus.html>Our Story</a></div>
+      <div class='help link'><a href=help.html>Help/FAQ</a></div>
+    </div>
+
+  <form id='details_div' class='main-div' style='display:block'>
+    <h3>Submit A Request/Leave A Feedback</h3><br />
+    <input type='text' placeholder='Name' id='name' required='true'/><br />
+    <input type='text' placeholder='Email' id='email' required='true' /><br />
+    <input type='text' placeholder='Phone Number' id='phone' required='true' /><br />
+    <input type='text' placeholder='Message' id='msg' required='true' /><br />
+    <button type='submit' onclick='send()' >Send</button>
+  </form>
+
+  <footer>
+  	<div class="container">
+  		<div class="col-3">
+  			<p>Curated for Kings from San Jose, CA.</p>
+  		</div>
+
+  		<div class="col-1">
+  			<ul class="unstyled-list">
+  				<li><strong>MORE FROM CURATE</strong></li>
+  				<li><a href="home.html">HOME</a></li>
+  				<li><a href="aboutus.html">OUR STORY</a></li>
+  				<li><a href="store.html">SHOP NOW</a></li>
+  				<li><a href="sales.html">SALES</a></li>
+  				<li><a href="newarrivals.html">NEW ARRIVALS</a></li>
+
+  			</ul>
+  		</div>
+
+  		<div class="col-1">
+  			<ul class="unstyled-list">
+  				<li><strong>CONTACT US</strong></li>
+  				<li>888 Curate Drive  </li>
+  				<li>CA, 95123 </li>
+  				<li>(408) 777-8888  </li>
+  				<li>info@curate.com </li>
+  			</ul>
+  		</div>
+
+  		<div class="col-1">
+  			<ul class="unstyled-list">
+  				<li><strong>CONNECT WITH US</strong></li>
+  				<li><a href="https://facebook.com/">Facebook</a></li>
+                  <li><a href="https://twitter.com/">Twitter</a></li>
+                  <li><a href="https://instagram.com/">Instagram</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </footer>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAJ2hTq8n8F1E1pezCCGhmp1b1uBogfBjI",
+    authDomain: "contactus-e0532.firebaseapp.com",
+    databaseURL: "https://contactus-e0532.firebaseio.com",
+    projectId: "contactus-e0532",
+    storageBucket: "contactus-e0532.appspot.com",
+    messagingSenderId: "318347945583",
+    appId: "1:318347945583:web:81438107435db05b09cf9a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="js/contactus.js"></script>
+</body>
+</html>

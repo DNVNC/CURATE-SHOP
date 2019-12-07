@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CURATE: User Login</title>
+  <link href='styles/login.css' type='text/css' rel='stylesheet'>
+
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
+</head>
+
+<body>
+  <div class='menu'>
+    <div class='homepage link'><a href=home.html>CURATE</a></div>
+    <div class='login link'><a href=signup.html>Login/Register</a></div>
+    <div class='story link'><a href=aboutus.html>Our Story</a></div>
+    <div class='help link'><a href=help.html>Help/FAQ</a></div>
+  </div>
+
+  <div id='login_div' class='login-form'>
+    <input id='email_field' type='email' placeholder='Email'><br />
+    <input id='password_field' type='password' placeholder='Password'><br />
+
+    <button onclick='login()'>Log In</button><br />
+
+    <p class='switch'>Don't have an account? <a href='signup.html'>Sign up here!</a></p>
+  </div>
+
+  <div id='user_div' class='loggedin'>
+    <h3>Welcome to Curate!</h3>
+    <p id="user_para">Login successful. Start shopping at Curate!</p>
+    <button onclick="location.href = 'store.html';">Shop Now</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAJ2hTq8n8F1E1pezCCGhmp1b1uBogfBjI",
+      authDomain: "contactus-e0532.firebaseapp.com",
+      databaseURL: "https://contactus-e0532.firebaseio.com",
+      projectId: "contactus-e0532",
+      storageBucket: "contactus-e0532.appspot.com",
+      messagingSenderId: "318347945583",
+      appId: "1:318347945583:web:81438107435db05b09cf9a"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/login.js"></script>
+</body>
+</html>

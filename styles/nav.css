@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+
+.menu {
+  color: white;
+  position: relative;
+  right: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  text-align: center;
+}
+
+.link {
+  padding-top: 1vh;
+}
+
+.homepage {
+  font-weight: bold;
+  letter-spacing: 5px;
+  grid-column: 1;
+}
+
+.link:hover {
+  border-top: 2px solid #666666;
+}
+
+.login {
+  grid-column: 8;
+}
+
+.story {
+  grid-column: 9;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+

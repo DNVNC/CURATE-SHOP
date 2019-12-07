@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+
+body {
+  background-color: #1a1a1a;
+}
+
+.menu {
+  color: white;
+  position: relative;
+  right: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  text-align: center;
+}
+
+.link {
+  padding-top: 1vh;
+}
+
+.homepage {
+  font-weight: bold;
+  letter-spacing: 5px;
+  grid-column: 1;
+}
+
+.link:hover {
+  border-top: 2px solid #666666;
+}
+
+.login {
+  grid-column: 8;
+}
+
+.story {
+  grid-column: 9;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5b042;
+}
+
+.signup-form {
+  text-align: center;
+  margin-top: 30vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login-form {
+  text-align: center;
+  margin-top: 30vh;
+  font-family: 'Montserrat', sans-serif;
+  display: none;
+}
+
+.loggedin {
+  color:white;
+  text-align: center;
+  margin-top: 20vh;
+  font-family: 'Montserrat', sans-serif;
+  display: none;
+}
+
+input {
+  width: 25vw;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #262626;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login-form button, .loggedin button {
+  width: 27vw;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #999999;
+  border: solid #999999 1px;
+  background-color: #1a1a1a;
+  margin: 24px;
+  padding: 16px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.login-form button:hover, .loggedin button:hover {
+  color: white;
+  border: solid white 1px;
+}
+
+.switch {
+  color: #999999;
+}
