@@ -4,6 +4,7 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+// Proceed to checkout function //
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -34,12 +35,14 @@ function purchaseClicked() {
     updateCartTotal()
 }
 
+// Removes item from cart //
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
 
+// Changes item quantity //
 function quantityChanged(event) {
     var input = event.target
     if (isNaN(input.value) || input.value <= 0) {
@@ -48,6 +51,7 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
+// Adds item to cart //
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
@@ -58,6 +62,7 @@ function addToCartClicked(event) {
     updateCartTotal()
 }
 
+// Adds item's title, price, and image onto cart section //
 function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
@@ -85,6 +90,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
+// Updates the total price in the cart //
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')

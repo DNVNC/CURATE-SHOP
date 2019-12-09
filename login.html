@@ -5,12 +5,14 @@
   <title>CURATE: User Login</title>
   <link href='styles/login.css' type='text/css' rel='stylesheet'>
 
+  <!-- Initiate Firebase Apps -->
   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <div class='menu'>
     <div class='homepage link'><a href=home.html>CURATE</a></div>
     <div class='login link'><a href=signup.html>Login/Register</a></div>
@@ -18,15 +20,19 @@
     <div class='help link'><a href=help.html>Help/FAQ</a></div>
   </div>
 
+  <!-- Login Form -->
   <div id='login_div' class='login-form'>
     <input id='email_field' type='email' placeholder='Email'><br />
     <input id='password_field' type='password' placeholder='Password'><br />
 
+    <!-- Login Button -->
     <button onclick='login()'>Log In</button><br />
 
+    <!-- Switch to Signup Form -->
     <p class='switch'>Don't have an account? <a href='signup.html'>Sign up here!</a></p>
   </div>
 
+  <!-- If logged in, display welcome message instead -->
   <div id='user_div' class='loggedin'>
     <h3>Welcome to Curate!</h3>
     <p id="user_para">Login successful. Start shopping at Curate!</p>
@@ -34,6 +40,7 @@
     <button onclick="logout()">Logout</button>
   </div>
 
+  <!-- Firebase Config -->
   <script>
     var firebaseConfig = {
       apiKey: "AIzaSyAJ2hTq8n8F1E1pezCCGhmp1b1uBogfBjI",
@@ -48,6 +55,7 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
+  <!-- Login scripts -->
   <script src="js/login.js"></script>
 </body>
 </html>

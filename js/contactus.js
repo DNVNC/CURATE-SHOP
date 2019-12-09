@@ -3,7 +3,8 @@ const detailsRef = dbRef.child('details');
 detailsRef.on('child_added', function(snapshot, prevChildKey) {
   var newPost = snapshot.val();
 });
-  
+
+// record messages to Firebase database  
 function send() {
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;

@@ -3,6 +3,7 @@
 
 
 /* Top Menu Bar */
+/* Initiate grid system */
 .menu {
   color: white;
   position: relative;
@@ -415,15 +416,40 @@ form {
 }
 
 input {
-  width: 25vw;
+  width: 50vw;
   font-size: 20px;
   border: none;
   color: white;
   background-color: #262626;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   padding: 15px;
   border-radius: 5px;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+textarea {
+  width: 50vw;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #262626;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;
+
+}
+}
+
+.msg {
+	height: 20vw;
+	width: 50vw;
 }
 
 button {

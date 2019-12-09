@@ -1,13 +1,9 @@
- @import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
 
 body {
-  background-image: url('images/homepage.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #1a1a1a;
 }
 
-/*Top Menu Bar */
 .menu {
   color: white;
   position: relative;
@@ -35,10 +31,6 @@ body {
   border-top: 2px solid #666666;
 }
 
-.shopnow {
-  grid-column: 7;
-}
-
 .login {
   grid-column: 8;
 }
@@ -52,22 +44,16 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #f5b042;
-}
-
-/* MADE IN SAN JOSE text */
-.slogan {
+.congrats {
   font-family: 'Montserrat', sans-serif;
   font-weight: 50;
   color: white;
-  margin-top: 20vh;
-  margin-left: 4vw;
-  font-size: 100px;
+  margin-top: 30vh;
+  text-align: center;
+  font-size: 70px;
   letter-spacing: 10px;
 }
 
-/* SHOP button */
 .btn {
   border: none;
   background-color: #262626;
@@ -78,12 +64,10 @@ a:hover {
   color: white;
   padding: 20px 100px;
   margin-top: 5vh;
-  margin-left: 4vw;
+  margin-left: 30%;
   text-align: center;
-  cursor: pointer;
 }
 
 button:hover {
   background-color: #333333;
-  color:orange;
 }

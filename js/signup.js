@@ -1,7 +1,9 @@
+//initiate and listen to button's onclick
 function initApp() {
   document.getElementById('signup').addEventListener('click', handleSignUp, false);
 }
 
+//sign up user to Firebase authentication system
 function handleSignUp() {
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
@@ -20,8 +22,11 @@ function handleSignUp() {
     // [END_EXCLUDE]
   });
   // [END createwithemail]
+
+  // check if user's signed in
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser) {
+      // if logged in, redirect to login page
       console.log(firebaseUser);
       window.location = 'login.html';
     } else {
@@ -31,6 +36,7 @@ function handleSignUp() {
   //window.location.href = 'home.html';
 }
 
+// initiate app on window's loading
 window.onload = function() {
   initApp();
 }
